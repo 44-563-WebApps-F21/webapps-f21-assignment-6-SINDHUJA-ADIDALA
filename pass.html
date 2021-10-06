@@ -58,6 +58,26 @@ function resolveForm (){
         out.innerHTML = "Values were not confirmed"
     }
 }
+let usingImage = 1;
+function newImage(){
+    img = document.getElementById("Iguana")
+    switch (usingImage) {
+        case 1:
+            img.src = "images/Abyssinian.jpg"
+            usingImage = 2
+            break;
+        case 2:
+            img.src = "images/deer.jpg"
+            usingImage = 3
+            break;
+        case 3:
+            img.src = "images/Iguana.jpg"  
+            usingImage = 1
+            break;  
+        default:
+            break;
+    }
+}
 </script>
 
 </body>
