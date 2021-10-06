@@ -78,7 +78,7 @@ function resolveForm (){
 }
 let usingImage = 1;
 function newImage(){
-    img = document.getElementById("Iguana")
+    img = document.getElementById("iguana")
     switch (usingImage) {
         case 1:
             img.src = "Abyssinian.jpg"
@@ -93,6 +93,8 @@ function newImage(){
             usingImage = 1
             break;  
         default:
+        img.src = "Abyssinian.jpg"
+            usingImage = 2
             break;
     }
 }
